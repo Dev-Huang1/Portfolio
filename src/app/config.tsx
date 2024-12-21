@@ -79,7 +79,7 @@ export const siteConfig = {
                 Hello everyone! I am <strong>Evan Huang</strong>, a <strong>front-end developer</strong> who started my programming journey in <strong>2023</strong>. I master <strong>Python, JavaScript and NextJS</strong>
             </p>
             <p>
-                When I'm not coding, you can find me on social media <strong>X</strong>, <strong>Threads</strong>, and <strong>Instagram</strong> Let's connect - I'd love to help with your next project!
+                When I'm not coding, you can find me on <strong>Arena Breakout</strong>, <strong>Minecraft Bedrock</strong>. Let's connect - I'd love to help with your next project!
             </p>
         `,
         experiences: [
