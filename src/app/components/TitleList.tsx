@@ -20,7 +20,7 @@ export default function TitleList({ titles }: { titles: string[] }) {
                     variants={isMobile ? slideInFromTop(0.8 + index * 0.2) : slideInFromLeft(0.8 + index * 0.2)}
                     initial="hidden"
                     animate="visible"
-                    className={`text-xs font-bold ${textColors[index % textColors.length]} ${bgColors[index % bgColors.length]} p-1 px-2 rounded-full flex items-center`}
+                    className={`text-xs lg:text-[0.6rem] xl:text-xs font-bold ${textColors[index % textColors.length]} ${bgColors[index % bgColors.length]} p-1 px-2 rounded-full flex items-center`}
                 >
                     <div className="w-2 h-2 bg-green-700 rounded-full mr-1"></div>
                     {title}
