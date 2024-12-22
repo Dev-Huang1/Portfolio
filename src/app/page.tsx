@@ -11,8 +11,15 @@ import HireMeButton from "./components/HireMeButton";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import Technologies from "./components/Technologies";
+import CloudflareTurnstile from '@cloudflare/turnstile';
 
 export default async function Home() {
+    const [captchaVerified, setCaptchaVerified] = useState(false);
+
+    const handleCaptcha = (token) => {
+        setCaptchaVerified(true);
+    };
+    
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -27,6 +34,16 @@ export default async function Home() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
+            {!captchaVerified && (
+                <div className="fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
+                    <div className="bg-white p-5 rounded-lg">
+                        <CloudflareTurnstile
+                            sitekey="your-site-key"
+                            onVerify={handleCaptcha}
+                        />
+                    </div>
+                </div>
+            )}
             <section className="w-full flex flex-wrap">
                 <header className="w-full lg:h-[100dvh] lg:sticky top-0 lg:w-1/2 pt-40 lg:pb-40 flex flex-col lg:justify-between">
                     <div>
