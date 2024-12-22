@@ -38,7 +38,7 @@ export default async function Home() {
                 <div className="fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
                     <div className="bg-white p-5 rounded-lg">
                         <CloudflareTurnstile
-                            sitekey="your-site-key"
+                            sitekey="0x4AAAAAAA3z6DCimkoLPbbr"
                             onVerify={handleCaptcha}
                         />
                     </div>
