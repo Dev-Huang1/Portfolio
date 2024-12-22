@@ -11,6 +11,7 @@ import HireMeButton from "./components/HireMeButton";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import Technologies from "./components/Technologies";
+import { Analytics } from "@vercel/analytics/react"
 
 export default async function Home() {
     
