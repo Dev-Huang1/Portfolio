@@ -11,7 +11,8 @@ import HireMeButton from "./components/HireMeButton";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import Technologies from "./components/Technologies";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default async function Home() {
     
@@ -55,6 +56,8 @@ export default async function Home() {
                     <Footer />
                     <SocialIcons />
                 </main>
+                <SpeedInsights />
+                <Analytics/>
             </section>
         </main>
     );
