@@ -17,6 +17,7 @@ import {
     SiHtml5,
     SiCss3,
     SiTypescript,
+    SiTailwindcss,
 } from 'react-icons/si';
 import { GrGraphQl } from "react-icons/gr";
 
