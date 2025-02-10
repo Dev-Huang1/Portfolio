@@ -16,6 +16,7 @@ import {
     SiMarkdown, 
     SiHtml5,
     SiCss3,
+    SiTypescript,
 } from 'react-icons/si';
 import { GrGraphQl } from "react-icons/gr";
 
@@ -116,6 +117,27 @@ export const siteConfig = {
                 ],
                 link: "https://onecaptcha.us.kg"
             },
+            {
+                title: "Open Wallet",
+                description: "A simple account book application built with nextjs.",
+                logo: "https://onecaptcha.us.kg/assets/logo/logo.svg",
+                repoLink: "https://github.com/Dev-Huang1/Open-Wallet",
+                technologies: [
+                    {
+                        icon: <SiTypescript className="text-[#3178C6]" />,
+                        name: "TypeScript"
+                    },
+                    {
+                        icon: <SiTailwindcss className="text-[#38B2AC]" />,
+                        name: "TailwindCSS"
+                    },
+                    {
+                        icon: <SiVercel className="text-[#fff]" />,
+                        name: "Vercel"
+                    },
+                ],
+                link: "https://openwallet.us.kg"
+             }
         ],
 technologies: {
             main: [
